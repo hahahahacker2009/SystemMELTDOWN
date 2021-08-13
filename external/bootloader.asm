@@ -35,7 +35,7 @@ printchar:
 clear_screen:
         mov ah, 0x07
         mov al, 0x00
-        mov bh, 0x15 ;Set the color here
+        mov bh, 0x0F ;Set the color here
         mov cx, 0x0000 
         mov dx, 0x184f
         int 0x10
