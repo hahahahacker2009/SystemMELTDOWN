@@ -1,4 +1,4 @@
-# SystemMELDOWN
+# SystemMELTDOWN
 A malware that will kill your system instantly
 
 This repository contain the binary and the source code of the SystemMELTDOWN malware.
