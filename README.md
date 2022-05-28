@@ -3,10 +3,11 @@ A malware that will kill your system instantly
 
 This repository contain the source code of the SystemMELTDOWN malware.
 
+(some are skidded code ;) but mostly is batch code that I write then convert it to C++ )
+
 # Please support me by joining this Discord Server:
 https://discord.gg/ttvxEC8dMw
 
-# And if you have any question, or want to contribute for this, please send to this email:
-someone1611_8859@protonmail.com
+# This project has been stopped. Only the legacy version are updated.
 
-(Must mail me with a Protonmail address! If you mail me with another like Gmail, Outlook, I will not answer you.)
+If you want to contribute to the project, mail: hahahahacker2009@outlook.com
