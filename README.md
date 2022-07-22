@@ -8,6 +8,6 @@ This repository contain the source code of the SystemMELTDOWN malware.
 # Please support me by joining this Discord Server:
 https://discord.gg/ttvxEC8dMw
 
-# This project has been stopped. Only the legacy version are updated.
+# Note: Only the legacy version are now updated.
 
 If you want to contribute to the project, mail: hahahahacker2009@outlook.com
