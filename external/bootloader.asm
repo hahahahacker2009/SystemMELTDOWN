@@ -1,6 +1,6 @@
 ; Compile with NASM to .BIN file
 ; nasm -f bin bootloader.asm -o bootloader.bin
-; This code is by SleepMod
+; This code is by SleepMod: https://github.com/SleepMod/Overwrite-MBR
 
 BITS    16
 ORG     0x7c00
